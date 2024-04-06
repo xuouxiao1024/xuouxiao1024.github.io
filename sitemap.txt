@@ -1,0 +1,8 @@
+https://example.com/2024/04/01/hexo-next%E5%8D%9A%E5%AE%A2/
+https://example.com/404.html
+https://example.com/resources/index.html
+https://example.com/categories/index-1.html
+https://example.com/tags/index-1.html
+https://example.com/tags/index.html
+https://example.com/categories/index.html
+https://example.com/
