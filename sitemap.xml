@@ -37,24 +37,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://example.com/categories/index-1.html</loc>
-    
-    <lastmod>2024-04-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://example.com/categories/index.html</loc>
-    
-    <lastmod>2024-04-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://example.com/</loc>
