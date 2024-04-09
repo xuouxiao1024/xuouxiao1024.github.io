@@ -3,9 +3,8 @@
   <entry>
     <title>hexo+next博客</title>
     <url>/2024/04/01/hexo-next%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>前情提要：不花一分钱搭建一个<strong>带有后台</strong>的个人 Blog 。</p>
+    <content><![CDATA[<p>来源于：<a href="https://shwst.one/2022/07/26/hexo-next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">hexo+next博客</a><br>前情提要：不花一分钱搭建一个<strong>带有后台</strong>的个人 Blog 。</p>
 <p>分为两个部分：1. 用 github 和 hexo 搭建不带后台的博客。 2. 迁移到 netlify 上，加入后台。</p>
-<p>好一些的阅读体验：<a href="https://shwst.one/2022/07/26/hexo-next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Link</a></p>
 <h2 id="hexo-github"><a href="#hexo-github" class="headerlink" title="hexo+github"></a>hexo+github</h2><p>首先是 hexo 的使用。先前我了解过 github pages 的使用，原理很简单： github 对每一个项目都可以建立一个 page ，前提是代码仓库的根目录上至少要有一个 <code>index.html</code> 。生成的 page 放在域名 <code>username.github.io/repositoryname</code> 上。当 <code>repositoryname</code> 和 <code>username</code> 相同的时候，域名简化成 <code>username.github.io</code> ，很适合建立个人博客。这样的博客都是静态的，也就是说，网站的所有文件都是生成好的，直接上传到 github 即可。</p>
 <p>那么怎么生成网站的静态文件呢？使用 hexo 、 hugo 等静态网站生成器就可以完成。生成完的网站文件在 <code>public</code> 目录下，将 <code>public</code> 目录上传到 github 即可。</p>
 <h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>首先来看<a href="https://hexo.io/zh-cn/">hexo</a>。</p>
@@ -245,5 +244,8 @@
 <p>ok 。尽情享受 CMS 吧！</p>
 <h3 id="To-do"><a href="#To-do" class="headerlink" title="To do"></a>To do</h3><p>decap CMS 不支持 latex ，并且 bug 较多，我以后有时间可能会把 Luogu 的 Markdown*Palettes 嵌入到 netlify 的 markdown 编辑器里，自己做一个小部件，或者哪位大佬帮我写一下吧 qwq 。</p>
 ]]></content>
+      <tags>
+        <tag>博客</tag>
+      </tags>
   </entry>
 </search>

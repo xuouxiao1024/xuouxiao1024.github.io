@@ -154,6 +154,10 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
   </nav>
 </div>
   <div class="links-of-author animated">
@@ -164,7 +168,7 @@
         <a href="/xuouxiao1024@qq.com" title="E-Mail → xuouxiao1024@qq.com" rel="noopener me"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://www.luogu.com.cn/user/1054686" title="Luogu → https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;1054686" rel="noopener me" target="_blank"><i class="fa fa-luogu fa-fw"></i>Luogu</a>
+        <a href="https://www.luogu.com/user/1054686" title="Luogu → https:&#x2F;&#x2F;www.luogu.com&#x2F;user&#x2F;1054686" rel="noopener me" target="_blank"><i class="fa fa-luogu fa-fw"></i>Luogu</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://www.zhihu.com/people/17-82-67-17-4" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;17-82-67-17-4" rel="noopener me" target="_blank"><i class="fa fa-zhihu fa-fw"></i>Zhihu</a>
@@ -252,7 +256,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-04-06 16:46:04" itemprop="dateModified" datetime="2024-04-06T16:46:04+08:00">2024-04-06</time>
+      <time title="修改时间：2024-04-09 13:52:06" itemprop="dateModified" datetime="2024-04-09T13:52:06+08:00">2024-04-09</time>
     </span>
 
   
@@ -265,9 +269,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>前情提要：不花一分钱搭建一个<strong>带有后台</strong>的个人 Blog 。</p>
+          <p>来源于：<a target="_blank" rel="noopener" href="https://shwst.one/2022/07/26/hexo-next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">hexo+next博客</a><br>前情提要：不花一分钱搭建一个<strong>带有后台</strong>的个人 Blog 。</p>
 <p>分为两个部分：1. 用 github 和 hexo 搭建不带后台的博客。 2. 迁移到 netlify 上，加入后台。</p>
-<p>好一些的阅读体验：<a target="_blank" rel="noopener" href="https://shwst.one/2022/07/26/hexo-next%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Link</a></p>
 <h2 id="hexo-github"><a href="#hexo-github" class="headerlink" title="hexo+github"></a>hexo+github</h2><p>首先是 hexo 的使用。先前我了解过 github pages 的使用，原理很简单： github 对每一个项目都可以建立一个 page ，前提是代码仓库的根目录上至少要有一个 <code>index.html</code> 。生成的 page 放在域名 <code>username.github.io/repositoryname</code> 上。当 <code>repositoryname</code> 和 <code>username</code> 相同的时候，域名简化成 <code>username.github.io</code> ，很适合建立个人博客。这样的博客都是静态的，也就是说，网站的所有文件都是生成好的，直接上传到 github 即可。</p>
 <p>那么怎么生成网站的静态文件呢？使用 hexo 、 hugo 等静态网站生成器就可以完成。生成完的网站文件在 <code>public</code> 目录下，将 <code>public</code> 目录上传到 github 即可。</p>
 <h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>首先来看<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a>。</p>
