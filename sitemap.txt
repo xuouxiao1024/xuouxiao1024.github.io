@@ -1,5 +1,4 @@
-https://example.com/resources/index-1.html
-https://example.com/tags/index-1.html
+https://example.com/tags.html
 https://example.com/2024/04/01/hexo-next%E5%8D%9A%E5%AE%A2/
 https://example.com/404.html
 https://example.com/
