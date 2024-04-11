@@ -31,7 +31,7 @@
 
   <url>
     <loc>https://example.com/</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2024-04-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -39,7 +39,7 @@
   
   <url>
     <loc>https://example.com/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2024-04-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
