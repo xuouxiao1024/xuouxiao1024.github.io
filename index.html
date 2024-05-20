@@ -152,13 +152,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -219,6 +219,85 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://example.com/2024/05/20/P1164-%E5%B0%8FA%E7%82%B9%E8%8F%9C-%E9%A2%98%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/1054686.png">
+      <meta itemprop="name" content="徐欧晓">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="徐欧晓的博客">
+      <meta itemprop="description" content="徐欧晓的博客，OI笔记，比赛游记。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 徐欧晓的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/05/20/P1164-%E5%B0%8FA%E7%82%B9%E8%8F%9C-%E9%A2%98%E8%A7%A3/" class="post-title-link" itemprop="url">P1164 小A点菜 题解</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-05-20 18:19:11 / 修改时间：18:21:59" itemprop="dateCreated datePublished" datetime="2024-05-20T18:19:11+08:00">2024-05-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>完全背包中的方案问题，板子题。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> BUFSIZE=<span class="number">1</span>&lt;&lt;<span class="number">20</span>;</span><br><span class="line"><span class="type">char</span> ibuf[BUFSIZE],*is=ibuf,*it=ibuf;</span><br><span class="line"><span class="function"><span class="type">char</span> <span class="title">getc</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(is==it)</span><br><span class="line">        it=(is=ibuf)+<span class="built_in">fread</span>(ibuf,<span class="number">1</span>,BUFSIZE,stdin);</span><br><span class="line">    <span class="keyword">return</span> is==it?EOF:*is++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">reads</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> ret=<span class="number">0</span>;</span><br><span class="line">    <span class="type">bool</span> sign=<span class="number">0</span>;</span><br><span class="line">    <span class="type">char</span> ch=<span class="built_in">getc</span>();</span><br><span class="line">    <span class="keyword">while</span>(!<span class="built_in">isdigit</span>(ch))&#123;</span><br><span class="line">        sign|=ch==<span class="string">&#x27;-&#x27;</span>;</span><br><span class="line">        ch=<span class="built_in">getc</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">isdigit</span>(ch))&#123;</span><br><span class="line">        ret=ret*<span class="number">10</span>+ch-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">        ch=<span class="built_in">getc</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sign?-ret:ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> n,m,a[<span class="number">105</span>],dp[<span class="number">10005</span>];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    n=<span class="built_in">reads</span>(),m=<span class="built_in">reads</span>();</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) a[i]=<span class="built_in">reads</span>();</span><br><span class="line">    dp[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=m;j&gt;=a[i];j--)&#123;</span><br><span class="line">            dp[j]+=dp[j-a[i]];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;dp[m];</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
