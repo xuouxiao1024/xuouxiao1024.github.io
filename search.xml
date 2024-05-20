@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>核污水</title>
+    <url>/2024/05/20/%E6%A0%B8%E6%B1%A1%E6%B0%B4/</url>
+    <content><![CDATA[<p><img src="https://xuouxiao1024.github.io/images/1.jpg" alt="漫画1" title="漫画1"><br><img src="https://xuouxiao1024.github.io/images/2.jpg" alt="漫画2" title="漫画2"><br>@谭太监@梓轩@圭表</p>
+]]></content>
+      <tags>
+        <tag>杂七杂八</tag>
+        <tag>核污水</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>P1064 [NOIP2006 提高组] 金明的预算方案 题解</title>
     <url>/2024/05/18/P1064-NOIP2006-%E6%8F%90%E9%AB%98%E7%BB%84-%E9%87%91%E6%98%8E%E7%9A%84%E9%A2%84%E7%AE%97%E6%96%B9%E6%A1%88-%E9%A2%98%E8%A7%A3/</url>
     <content><![CDATA[<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>每一套物品有主件和附件，主件可以单独购买，附件只能和主件一起买。所以，每一套物品有四种买法：主件、主件和附件1、主件和附件2、主件和所有附件。</p>
