@@ -81,13 +81,6 @@
   </url>
   
   <url>
-    <loc>https://example.com/tags/NOIP/</loc>
-    <lastmod>2024-06-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://example.com/tags/%E8%83%8C%E5%8C%85DP/</loc>
     <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -101,10 +94,17 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://example.com/tags/NOIP/</loc>
+    <lastmod>2024-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://example.com/categories/OI/</loc>
+    <loc>https://example.com/categories/%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -118,14 +118,14 @@
   </url>
   
   <url>
-    <loc>https://example.com/categories/OI/%E9%A2%98%E8%A7%A3/</loc>
+    <loc>https://example.com/categories/OI/</loc>
     <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://example.com/categories/%E9%A2%98%E8%A7%A3/</loc>
+    <loc>https://example.com/categories/OI/%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
