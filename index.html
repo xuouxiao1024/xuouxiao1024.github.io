@@ -258,7 +258,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-07-27 19:46:01 / 修改时间：20:08:00" itemprop="dateCreated datePublished" datetime="2024-07-27T19:46:01+08:00">2024-07-27</time>
+      <time title="创建时间：2024-07-27 19:46:01 / 修改时间：20:18:58" itemprop="dateCreated datePublished" datetime="2024-07-27T19:46:01+08:00">2024-07-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -285,56 +285,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h2><h3 id="排列组合"><a href="#排列组合" class="headerlink" title="排列组合"></a>排列组合</h3><p>错排问题：$D_n&#x3D;(n-1)(D_{n-1}+D_{n-2})$     $(D_1&#x3D;0,D_2&#x3D;1)$</p>
-<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h3><p>出栈序列数量 卡特兰数$\displaystyle C_i&#x3D;\frac{C^n_{2n}}{n+1}&#x3D;\sum_{i&#x3D;0}^{n} {C_i}{C_{n-i}}$</p>
-<h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><p>一个结点的度为这个节点的子节点数，一棵树的度为所有节点的度数最大值</p>
-<h4 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h4><ul>
-<li>二叉树中，编号为i的结点，父结点为$\lfloor \frac{i}{2} \rfloor$，子结点分别为$2i$和$2i+1$</li>
-<li>第$i$层最多有$2^{i-1}$个结点，深度为$k$的树最多有$2^k-1$个结点</li>
-<li>$N&#x3D;N_0+N_1+N_2$，$N_2+1&#x3D;N_0$</li>
-</ul>
-<h3 id="图"><a href="#图" class="headerlink" title="图"></a>图</h3><h4 id="有关定义"><a href="#有关定义" class="headerlink" title="有关定义"></a>有关定义</h4><ul>
-<li>不存在重边与自环的图，叫做<strong>简单图</strong></li>
-<li>无向图中任意两个结点间都存在边相连，叫做<strong>无向完全图</strong></li>
-<li>有向图中任意两个结点间都存在互为相反的两条边相连，叫做<strong>有向完全图</strong></li>
-<li><strong>结点的度</strong>：图中与结点相连的边的数目</li>
-<li><strong>入度</strong>：在有向图中，以这个结点为终点的有向边的数目</li>
-<li><strong>出度</strong>：在有向图中，以这个结点为起点的有向边的数目</li>
-<li>在无向图中，如果两点间存在路径（不一定直接到达），则称两点<strong>连通</strong></li>
-<li>在有向图中，如果两点间可以互相到达，则称两点<strong>强联通</strong></li>
-<li>一个无向图，若每两个点都连通，则称此图为<strong>连通图</strong></li>
-<li>一个有向图，若每两个点都连通，则称此图为<strong>强连通图</strong></li>
-</ul>
-<h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><ul>
-<li>$图中所有结点的度的总和&#x3D;边数 \times 2$</li>
-<li>有向完全图，共有$n(n-1)$条边</li>
-<li>无向完全图，共有$\frac{n(n-1)}{2}$条边</li>
-<li>$n$个点的连通图，边的数量至少为$n-1$</li>
-<li>$n$个点的强连通图，边的数量至少为$n$</li>
-</ul>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p>不稳定的排序：选择、希尔、快排、堆排</p>
-<ul>
-<li>$O(n^2)$：冒泡、选择、插入、快排最坏</li>
-<li>$O(n\log{n})$：归并、快排、堆排、希尔、sort</li>
-<li>$O(n)$：桶排、计数、基数</li>
-</ul>
-<h3 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h3><h4 id="最大子段和"><a href="#最大子段和" class="headerlink" title="最大子段和"></a>最大子段和</h4><p>⚠️<strong>子段必须连续</strong>⚠️</p>
-<p>$dp_i$代表以$a_i$为结尾的最大子段和</p>
-<p>状态转移方程：$dp_i&#x3D;max({dp_{i-1}+a_i},{a_i})$</p>
-<h4 id="最长上升子序列"><a href="#最长上升子序列" class="headerlink" title="最长上升子序列"></a>最长上升子序列</h4><p>⚠️<strong>子序列可以断开</strong>⚠️</p>
-<p>$dp_i$代表以$a_i$为结尾的最长上升子序列的长度</p>
-<p>主要代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">    dp[i]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;i;j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[j]&lt;a[i]) dp[i]=<span class="built_in">max</span>(dp[i],dp[j]+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    ans=<span class="built_in">max</span>(ans,dp[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="最长公共子序列"><a href="#最长公共子序列" class="headerlink" title="最长公共子序列"></a>最长公共子序列</h4><p>$dp_{i,j}$代表以$s1_{i}$为$s1$的末尾，$s2_j$为$s2$的末尾时的最长公共子序列长度</p>
-<p>$$<br>状态转移方程：dp_{i,j} &#x3D; \begin{cases}<br>   dp_{i-1,j-1}+1 &amp;\text{if } s1_i&#x3D;s2_j \<br>   max(dp_{i-1,j},dp_{i-1,j}) &amp;\text{if } s1_i \ne s2_j<br>\end{cases}<br>$$</p>
-<h4 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h4><p>$f[i][j]&#x3D;max(f[i-1][j],f[i-1][j-v[i]]+w[i])$</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> j=m;j&gt;=v[i];j--)&#123;</span><br><span class="line">      dp[j]=<span class="built_in">max</span>(dp[j],dp[j-v[i]]+w[i]);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="完全背包"><a href="#完全背包" class="headerlink" title="完全背包"></a>完全背包</h4><p>$f[i][j]&#x3D;max(f[i-1][j],f[i-1][j-v[i]]+w[i])$</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">   <span class="keyword">for</span>(<span class="type">int</span> j=v[i];j&lt;=m;j++)&#123;</span><br><span class="line">      dp[j]=<span class="built_in">max</span>(dp[j],dp[j-v[i]]+w[i]);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="多重背包"><a href="#多重背包" class="headerlink" title="多重背包"></a>多重背包</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i ++ )&#123;</span><br><span class="line">   <span class="type">int</span> a, b, s;</span><br><span class="line">   <span class="type">int</span> k = <span class="number">1</span>;</span><br><span class="line">   cin &gt;&gt; a &gt;&gt; b &gt;&gt; s;</span><br><span class="line">   <span class="keyword">while</span> (k &lt;= s)&#123;</span><br><span class="line">      cnt ++ ;</span><br><span class="line">      v[cnt] = a * k;</span><br><span class="line">      w[cnt] = b * k;</span><br><span class="line">      s -= k;</span><br><span class="line">      k *= <span class="number">2</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">if</span> (s &gt; <span class="number">0</span>)&#123;</span><br><span class="line">      cnt ++ ;</span><br><span class="line">      v[cnt] = a * s;</span><br><span class="line">      w[cnt] = b * s;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;<span class="comment">//二进制优化操作</span></span><br><span class="line">n = cnt;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i ++ )</span><br><span class="line">   <span class="keyword">for</span> (<span class="type">int</span> j = m; j &gt;= v[i]; j -- )</span><br><span class="line">      f[j] = <span class="built_in">max</span>(f[j], f[j - v[i]] + w[i]);</span><br></pre></td></tr></table></figure>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/07/27/%E5%88%9D%E8%B5%9B%E7%AC%94%E8%AE%B0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
